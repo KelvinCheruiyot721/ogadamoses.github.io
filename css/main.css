@@ -499,6 +499,13 @@ body {
     margin-bottom: 1.5em;
   }
 
+  .blog-title-list img {
+    border-radius: 99px;
+    display: inline-block;
+    height: 2em;
+    vertical-align: middle;
+  }
+
 
 
   

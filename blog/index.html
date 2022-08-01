@@ -7,29 +7,35 @@ layout: default
         <div class="col col-aside blog-recent">
             <h4>Recent Posts</h4>
             <ul class="blog-title-list">
+                {% for post in site.posts limit:5 %}
                 <li>
-                    <a href="">Blog Post Title</a>
-                    <span>Posted: Month, Year, Day</span>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                    <span>Posted: {{ post.date | date: '%B %d, %Y' }}
+                        <br> By {{ post.author }}
+                        <img src="{{ post.gravatar}}">
+                    </span>
                 </li>
+                {% endfor %}
             </ul>
         </div>
         <div class="col col-content blog-previews">
+            {% for post in site.posts %}
             <div class="blog-posts">
                 <header class="post-header">
-                    <h2><a href="">This is the title of the article</a></h2>
+                    <h2><a href="{{ post.url }}" > {{ post.title }}</a></h2>
                     <div class="post-byline">
-                        <img src="https://avatars.githubusercontent.com/u/83179626?v=4">
-                        <a href="#" class="social-link">TW</a>
-                        By: Ogada Moses
-                        <span>-Month Day, Year</span>
+                        <img src="{{ post.gravatar }}" />
+                        <a href="{{ post.authorTwitter }}" class="social-link">TW</a>
+                        By: {{ post.author }}
+                        <span>- {{ post.date | date: '%B %d, %Y' }}</span>
                     </div>
                 </header>
-                <div class="posts-image" style="background-image:url('/images/small/img3.jpg')">
+                <div class="posts-image" 
+                   style="background-image:url({{ post.postHero }} )"></div>
+                    {{ post.excerpt }}
                 </div>
-                <p>
-                    Last seen today at 1300 hrs
-                </p>
+                {% endfor %}
             </div>
-        </div>
     </div>
 </div>
+ 
