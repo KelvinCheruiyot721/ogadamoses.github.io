@@ -604,13 +604,13 @@ body {
   .show-mobile-menu {
     display: block;
     float: right;
-    font-weight: bold;
+    /*font-weight: bold; */
     margin-top: 1.5vh;
     padding: 1.5em;
     position: relative;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
   }
- .head-nav {
+ .header-nav {
   background-color: #444;
   box-sizing: border-box;
   left: 0;
@@ -624,11 +624,11 @@ body {
   width: 100vw;
   z-index: 9;
  }
- .head-nav li {
+ .header-nav li {
   display: block;
   margin-top: 1em;
  }
- .head-nav li ~  li {
+ .header-nav li ~  li {
   border: 0;
   padding: 0;
  }
