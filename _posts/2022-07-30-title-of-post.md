@@ -5,7 +5,7 @@ postHero: /images/small/img3.jpg
 author: Ogada Moses
 authorTwitter: https://mobile.twitter.com/0gada_Moses
 gravatar: https://avatars.githubusercontent.com/u/83179626?v=4
-postFooter: Additional information, and maybe a <a href="#">link or two</a>
+postFooter: 
 ---
 
 Making money as a developer is easy when you pick a web development framework that is mature, easy to use and has large community support. Ruby on Rails stands out to be one of the highest paying technologies in web development as per StackOverflow survey of 2021.  This is a good reason to start learning Ruby on Rails Now!
